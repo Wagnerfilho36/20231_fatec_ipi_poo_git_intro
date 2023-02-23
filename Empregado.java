@@ -8,11 +8,13 @@ public class Empregado{
     private double bonus;
     private int tipo;
     
+    //codigo de infra
+
     public double calcularSalario(){
-        if (tipo == 0){
+        if (tipo == 1){
             return salario;
         }
-        if (tipo == 1){
+        if (tipo == 2){
             return salario + salario * comissao;
         }
         if (tipo == 3){
