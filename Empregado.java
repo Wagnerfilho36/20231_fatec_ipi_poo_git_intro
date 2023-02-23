@@ -22,6 +22,8 @@ public class Empregado{
 
     }
 
+
+    
     public String getNome(){
         return nome;
     }
