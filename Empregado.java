@@ -59,10 +59,14 @@ public class Empregado{
         this.nome = nome;
     } 
     
-        public int getIdade(){
+    public int getIdade(){
         return idade;
     }
-    public void setIdade(String nome){
+
+    public void setIdade(int idade){
         this.idade = idade;
     } 
 }
+
+//A letra A(verde) A= untracked  verde =staged
+//M = modified---- verde = staged
