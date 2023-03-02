@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 public class TesteEmpregado {
     public static void main(String[] args) {
@@ -16,7 +16,23 @@ public class TesteEmpregado {
         e3.setSalario(1700);
         e3.setBonus(400);
 
-        System.out.println("Tudo certo!");
+        var empregados = new ArrayList<Empregado>();
+        empregados.add(e1);
+        empregados.add(e2);
+        empregados.add(e3);
+
+
+        for (Empregado e : empregados){
+            System.out.println(e.calcularSalario());
+        }
+
+        
+        for(int i=0; i<empregados.size(); i++){
+            System.out.println(empregados.get(i).calcularSalario());
+        }
+
+
+        //System.out.println("Tudo certo!");
     }
 }
 // git status -s (esse -s significa sortgh)
